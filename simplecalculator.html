@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SIMPLE CALCULATOR</title>
+<style>
+body {
+    background-color: green;
+}
+h1 {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 0px;
+    color: red;
+}
+</style>
+</head>
+<body>
+<h1>SIMPLE CALCULATOR</h1>
+
+<label for="number1">FIRST NUMBER</label>
+<input type="number" id="number1" placeholder="first number">
+
+<label for="number2">SECOND NUMBER</label>
+<input type="number" id="number2" placeholder="second number">
+
+<button onclick="addNumber()">+ Add</button>
+<button onclick="subtractNumber()">- Minus</button>
+
+<p id="Result">Result</p>
+
+<script>
+function addNumber() {
+    let x = document.getElementById("number1").value;
+    let y = document.getElementById("number2").value;
+    let z = Number(x) + Number(y);
+    document.getElementById("Result").textContent = z;
+}
+
+function subtractNumber() {
+    let a = document.getElementById("number1").value;
+    let b = document.getElementById("number2").value;
+    let c = Number(a) - Number(b);
+    document.getElementById("Result").textContent = c;
+}
+</script>
+</body>
+</html>
